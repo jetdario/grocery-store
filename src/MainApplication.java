@@ -13,7 +13,9 @@ public class MainApplication {
             System.out.println("Product Name: "+p.getProductName());
             System.out.println("Product Type: "+p.getProductType());
             System.out.println("Product Price: "+p.getPrice());
-            int totalItemCount = productService.getTotalProductsWithSale(p.getItemCount(), p.getProductSale());
+
+            int totalItemCount = productService.getTotalProductItemCountWithSale(p.getItemCount(), p.getProductSale());
+
             System.out.println("Product Item Count: "+(p.getProductType().equals("Piece") ? totalItemCount+"/pc(s)" : totalItemCount+"/kg"));
             System.out.println("SALE: "+p.getProductSale());
             System.out.println("TOTAL: "+p.getTotalPrice());
