@@ -5,7 +5,7 @@ public class ProductService {
         return productPrice * productClassification;
     }
 
-    public int getTotalProductsWithSale(int productClassification, String productSale) {
+    public Integer getTotalProductsWithSale(int productClassification, String productSale) {
         int totalProductClassification = 0;
 
         if(productSale == null){
